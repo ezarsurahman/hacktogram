@@ -12,6 +12,12 @@ const SignIn = () => {
     const navigate = useNavigate()
 
     const handleSubmit = (e) => {
+
+        if(!username || !password) {
+            alert("Enter both username and password!")
+            return
+        }
+
         fetch("http://localhost:3001/users")
         .then((rsp) => rsp.json())
         .then((json) => {

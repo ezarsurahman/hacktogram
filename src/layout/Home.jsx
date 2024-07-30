@@ -16,8 +16,9 @@ const Home = () => {
                 </Flex>
             </Flex>
             <Box backgroundColor={"gray"} h={"97%"} borderColor={"black"} w="1px"></Box>
+            <Outlet></Outlet>
         </Flex>
-        
+    
     );
 };
 
