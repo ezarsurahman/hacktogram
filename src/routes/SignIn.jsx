@@ -22,7 +22,7 @@ const SignIn = () => {
         .then((rsp) => rsp.json())
         .then((json) => {
             setUsers(json)
-            users.forEach((user) => {
+            json.forEach((user) => {
                 if (user.username == username && user.password == password) {
                     localStorage.setItem("username",username)
                     localStorage.setItem("password",password)

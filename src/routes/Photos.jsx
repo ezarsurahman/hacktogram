@@ -52,7 +52,7 @@ const Photos = () => {
                     <Img src={userObject.profilePic} height={"100px"} width={"100px"} objectFit={"cover"} borderRadius={"50%"}></Img>
                     <Flex flexDirection={"column"} justifyContent={"center"} alignItems={"flex-start"}>
                         <Text fontWeight={"bold"} fontSize={"1.5rem"}>{username}</Text> 
-                        <Text></Text>
+                        <Text>{userPhotos.length} Photos</Text>
                         <Flex flexDirection={"column"} alignItems={"flex-start"}gap={"0.2rem"}>
                             <Text>{userObject.fullname}</Text>
                             <Text>{userObject.desc}</Text>
@@ -70,7 +70,7 @@ const Photos = () => {
                     <SimpleGrid columns={3} spacing={1}>
                         {userPhotos.map((photo) => {
                             return (
-                            <Link to={`/${photo.id}`}>
+                            <Link to={`/${photo.id}`} key={photo.id}>
                                 <Img src={photo.url} objectFit={"cover"} w={"200px"} h={"200px"} alt={photo.caption}></Img>
                             </Link>
                         )
