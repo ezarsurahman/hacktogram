@@ -1,11 +1,12 @@
 // TODO: answer here
+import { Heading } from "@chakra-ui/react";
 
 const Photos = () => {
     // TODO: answer here
 
     return (
         <>
-            {/* TODO: answer here */}
+            <Heading>Tot</Heading>
         </>
     );
 };

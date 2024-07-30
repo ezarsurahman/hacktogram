@@ -1,11 +1,13 @@
 // TODO: answer here
 
+import { Heading } from "@chakra-ui/react"
+
 const NotFound = () => {
     // TODO: answer here
 
     return (
         <>
-            {/* TODO: answer here */}
+            <Heading>Not FOund</Heading>
         </>
     );
 };
